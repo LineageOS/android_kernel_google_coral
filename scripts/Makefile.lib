@@ -278,6 +278,9 @@ ifeq ($(DTC_EXT),)
 DTC_FLAGS += -Wno-unit_address_format \
 	-Wno-avoid_unnecessary_addr_size \
 	-Wno-alias_paths \
+	-Wno-graph_child_address \
+	-Wno-graph_port \
+	-Wno-unique_unit_address \
 	-Wno-pci_device_reg
 endif
 
