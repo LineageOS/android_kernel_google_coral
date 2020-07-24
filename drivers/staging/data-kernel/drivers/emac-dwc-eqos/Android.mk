@@ -13,7 +13,7 @@ endif # opensource
 
 LOCAL_MODULE_PATH := $(KERNEL_MODULES_OUT)
 
-DLKM_DIR := ./device/qcom/common/dlkm
+#DLKM_DIR := ./device/qcom/common/dlkm
 KBUILD_OPTIONS := $(EMAC_BLD_DIR)
 KBUILD_OPTIONS += DCONFIG_PTPSUPPORT_OBJ=1
 KBUILD_OPTIONS += DCONFIG_DEBUGFS_OBJ=1
@@ -21,7 +21,7 @@ KBUILD_OPTIONS += DCONFIG_DEBUGFS_OBJ=1
 
 LOCAL_MODULE      := emac_dwc_eqos.ko
 LOCAL_MODULE_TAGS := optional
-include $(DLKM_DIR)/AndroidKernelModule.mk
+#include $(DLKM_DIR)/AndroidKernelModule.mk
 endif
 endif
 

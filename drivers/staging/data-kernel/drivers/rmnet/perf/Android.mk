@@ -24,13 +24,13 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../../../../../kernel/msm-4.19/include/
 endif #End of check for kona include
 
 RMNET_PERF_BLD_DIR := ../../vendor/qcom/opensource/data-kernel/drivers/rmnet/perf
-DLKM_DIR := ./device/qcom/common/dlkm
+#DLKM_DIR := ./device/qcom/common/dlkm
 
 KBUILD_OPTIONS := $(RMNET_PERF_BLD_DIR)
 LOCAL_MODULE_TAGS := debug
 
-$(warning $(DLKM_DIR))
-include $(DLKM_DIR)/AndroidKernelModule.mk
+#$(warning $(DLKM_DIR))
+#include $(DLKM_DIR)/AndroidKernelModule.mk
 
 endif #End of check for target
 endif #End of Check for qssi target
